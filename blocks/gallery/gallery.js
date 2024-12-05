@@ -7,11 +7,8 @@ import {
 
 
 export default function decorate(block) {
-  const section = domEl(section,{id:'leadership-team'
-    
-
-    }
-  )
+  const section = document.createElement('section');
+  section.textContent = 'Gallery'
   const container = div({class:'container'})
   
 
