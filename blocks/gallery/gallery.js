@@ -47,8 +47,9 @@ export default function decorate(block) {
     rowsdiv.append(carddiv);
   });
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
-  block.textContent = '';
-  block.append(carddiv);
+  //block.textContent = '';
+  //block.append(carddiv);
+  block.append(section)
 
   cards.appendChild(rows)
   container.appendChild(cards)
